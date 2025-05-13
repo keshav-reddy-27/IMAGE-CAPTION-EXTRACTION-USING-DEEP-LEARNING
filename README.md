@@ -1,1 +1,3 @@
 # IMAGE-CAPTION-EXTRACTION-USING-DEEP-LEARNING
+To develop an advanced image captioning system using deep learning techniques that can generate accurate, coherent, and contextually relevant textual descriptions for a wide range of images. Achieve high accuracy in generating captions that closely match human-provided descriptions.
+Ensure the system can understand and describe not only the objects in the image but also their relationships and context.Implement attention mechanisms to improve focus on relevant image parts![image](https://github.com/user-attachments/assets/018b6908-1062-4972-9925-6ebe930ed6a7)
