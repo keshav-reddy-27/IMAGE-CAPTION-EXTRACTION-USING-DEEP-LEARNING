@@ -1,0 +1,6 @@
+Flask
+tensorflow
+numpy
+pickle-mixin
+gunicorn
+gdown

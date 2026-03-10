@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Image Captioning</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/tool">Caption Tool</a></li>
+            </ul>
+            <div class="mobile-nav">
+                <span class="menu-icon">☰</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header Section with Split Layout -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="info-left">
+                <h1>Bring Your Images to Life with Captivating Captions!</h1>
+                <p>Unlock the power of AI to transform your photos with vivid, descriptive captions that truly capture the essence of each image. Perfect for photographers, storytellers, and creatives eager to add depth to their visuals.</p>
+                <p>Simply upload an image and let our advanced model do the magic—creating a unique caption that speaks to your audience!</p>                
+                <a href="/tool" class="btn">Start Captioning</a>
+            </div>
+            <div class="image-right">
+                <img src="{{ url_for('static', filename='ai.jpg') }}" alt="AI Captioning Illustration" class="ai-image">
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Image Captioning Tool. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+
+</body>
+</html>
